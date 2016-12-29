@@ -60,18 +60,18 @@ NativeAppEventEmitter.addListener('QQ_Resp', resp => {
 
 export function login(scopes) {
     // console.log("login>>>>>>>>>>>>>>>>>>>>");
-    return QQAPI.login(scopes)
-        .then(() => waitForResponse("QQAuthorizeResponse"));
+    return QQAPI.login(scopes);
+        //.then(() => waitForResponse("QQAuthorizeResponse"));
 }
 
 export function shareToQQ(data={}) {
-    return QQAPI.shareToQQ(data)
-        .then(() => waitForResponse("QQShareResponse"));
+    return QQAPI.shareToQQ(data);
+        //.then(() => waitForResponse("QQShareResponse"));
 }
 
 export function shareToQzone(data={}) {
-    return QQAPI.shareToQzone(data)
-        .then(() => waitForResponse("QQShareResponse"));
+    return QQAPI.shareToQzone(data);
+        //.then(() => waitForResponse("QQShareResponse"));
 }
 
 export function logout(){
